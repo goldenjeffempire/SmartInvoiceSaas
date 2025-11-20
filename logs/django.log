@@ -286,3 +286,4 @@ django.core.exceptions.FieldError: Cannot resolve keyword 'total' into field. Ch
 WARNING 2025-11-20 19:33:53,326 basehttp 5225 140502617982656 "GET /favicon.ico HTTP/1.1" 404 6146
 WARNING 2025-11-20 19:40:08,355 basehttp 9235 140438638073536 "GET /favicon.ico HTTP/1.1" 404 6146
 WARNING 2025-11-20 22:51:29,513 basehttp 1179 139722174400192 "GET /favicon.ico HTTP/1.1" 404 6146
+WARNING 2025-11-20 23:34:43,344 basehttp 921 139641630983872 "GET /favicon.ico HTTP/1.1" 404 6146
