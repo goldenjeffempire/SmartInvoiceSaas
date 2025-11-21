@@ -1,10 +1,10 @@
-modules = ["web", "python-3.12", "nodejs-20", "bash"]
+modules = ["python-3.12", "web", "c-clang14", "nodejs-20"]
 [agent]
 expertMode = true
 
 [nix]
 channel = "stable-25_05"
-packages = ["pango", "cairo", "gdk-pixbuf", "shared-mime-info"]
+packages = ["awsebcli", "cairo", "fontconfig", "freetype", "gdk-pixbuf", "ghostscript", "glib", "harfbuzz", "lcms2", "libffi", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "libyaml", "openjpeg", "pango", "pgadmin4", "pkg-config", "shared-mime-info", "tcl", "tk", "zlib"]
 
 [workflows]
 runButton = "Project"
@@ -33,6 +33,10 @@ outputType = "webview"
 [[ports]]
 localPort = 5000
 externalPort = 80
+
+[[ports]]
+localPort = 40221
+externalPort = 3001
 
 [[ports]]
 localPort = 41507
