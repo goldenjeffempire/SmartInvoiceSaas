@@ -287,3 +287,148 @@ WARNING 2025-11-20 19:33:53,326 basehttp 5225 140502617982656 "GET /favicon.ico 
 WARNING 2025-11-20 19:40:08,355 basehttp 9235 140438638073536 "GET /favicon.ico HTTP/1.1" 404 6146
 WARNING 2025-11-20 22:51:29,513 basehttp 1179 139722174400192 "GET /favicon.ico HTTP/1.1" 404 6146
 WARNING 2025-11-20 23:34:43,344 basehttp 921 139641630983872 "GET /favicon.ico HTTP/1.1" 404 6146
+ERROR 2025-11-21 00:02:09,710 log 5867 139919464111296 Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+ERROR 2025-11-21 00:02:10,404 log 5867 139919464111296 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+ERROR 2025-11-21 00:02:10,651 log 5867 139919464111296 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+ERROR 2025-11-21 00:02:13,699 log 5867 139919464111296 Internal Server Error: /invoices/create/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+ERROR 2025-11-21 00:02:15,340 log 5867 139919464111296 Internal Server Error: /invoices/invoice/20/delete/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+ERROR 2025-11-21 00:02:15,916 log 5867 139919464111296 Internal Server Error: /invoices/invoice/21/status/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+WARNING 2025-11-21 00:05:39,171 basehttp 6938 140296024397504 "GET /favicon.ico HTTP/1.1" 404 6675
+ERROR 2025-11-21 00:06:41,474 log 7539 139862046444736 Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+ERROR 2025-11-21 00:06:42,051 log 7539 139862046444736 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+ERROR 2025-11-21 00:06:42,322 log 7539 139862046444736 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+ERROR 2025-11-21 00:06:42,951 log 7539 139862046444736 Internal Server Error: /invoices/create/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+ERROR 2025-11-21 00:06:43,558 log 7539 139862046444736 Internal Server Error: /invoices/invoice/1/delete/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+ERROR 2025-11-21 00:06:44,162 log 7539 139862046444736 Internal Server Error: /invoices/invoice/2/status/
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/smart_invoice/security_middleware.py", line 48, in process_request
+    f"user={request.user.username if request.user.is_authenticated else 'anonymous'}"
+                                     ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user'

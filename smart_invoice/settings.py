@@ -58,12 +58,16 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "csp",
     "invoices",
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    "csp.middleware.CSPMiddleware",
+    "smart_invoice.security_middleware.SecurityHeadersMiddleware",
+    "smart_invoice.security_middleware.SecurityEventLoggingMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -214,3 +218,41 @@ LOGGING = {
         },
     },
 }
+
+# Content Security Policy (CSP) settings for security - django-csp 4.0 format
+CONTENT_SECURITY_POLICY = {
+    'DIRECTIVES': {
+        'default-src': ("'self'",),
+        'script-src': ("'self'", "'unsafe-inline'", "https://cdn.tailwindcss.com", "https://fonts.googleapis.com"),
+        'style-src': ("'self'", "'unsafe-inline'", "https://cdn.tailwindcss.com", "https://fonts.googleapis.com"),
+        'img-src': ("'self'", "data:", "https:", "https://ui-avatars.com"),
+        'font-src': ("'self'", "https://fonts.gstatic.com", "data:"),
+        'connect-src': ("'self'",),
+        'frame-ancestors': ("'none'",),
+        'base-uri': ("'self'",),
+        'form-action': ("'self'",),
+    }
+}
+
+# Rate limiting configuration
+RATELIMIT_ENABLE = not DEBUG
+RATELIMIT_USE_CACHE = "default"
+RATELIMIT_VIEW = "django_ratelimit.decorators.ratelimit"
+
+# Cache configuration (for rate limiting in development)
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+        "LOCATION": "smart-invoice-cache",
+    }
+}
+
+# Session security
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SAMESITE = "Lax"
+SESSION_COOKIE_AGE = 1209600  # 2 weeks
+
+# CSRF security
+CSRF_COOKIE_HTTPONLY = True
+CSRF_COOKIE_SAMESITE = "Lax"
+CSRF_USE_SESSIONS = False
